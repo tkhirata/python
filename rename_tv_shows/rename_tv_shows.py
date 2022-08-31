@@ -32,11 +32,11 @@ while active:
 			show_name = episode_directory.split("/")
 			show_name = show_name[4].lower()
 
-			'''Using regex to retreive season number'''
+			'''Using regex to retrieve season number'''
 			season = re.findall(r"[sS][0-9]+", episodes)
 			season = season[0]
 
-			'''Using regex to retreive episode number'''
+			'''Using regex to retrieve episode number'''
 			episode = re.findall(r"[eE][0-9]+", episodes)
 			episode = episode[0]
 				
