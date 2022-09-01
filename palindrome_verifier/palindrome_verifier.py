@@ -1,6 +1,6 @@
 import re
 
-strings = ["racecar", "apples", "ana", "a santa at nasa", "meSSenger", "the !cAt in!! the hat", "avId diva", "Amy, must I jujitsu my ma??", "Ah, Satan sees Natasha!!"]
+strings = ["racecar", "apples", "ana2", "a santa at+  nasa", "meSSenger", "the !cAt in!! the hat", "avId diva", "Amy, must I jujitsu my ma??", "Ah, Satan sees Natasha!!"]
 
 
 for string in strings:
