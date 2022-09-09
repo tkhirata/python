@@ -10,21 +10,22 @@ reversed_separated_string = []
 '''counter for returning original strings in final output'''
 i = 0
 
-'''takes string out of list'''
+'''takes string out of strings list'''
 for string in strings:
-	'''removes any white spaces and makes everything lower case'''
+	'''removes any white spaces and makes string lower case'''
 	string = string.replace(' ','').lower()
 	
-	'''takes each letter of string and adds it to a list'''
+	'''takes each letter of string and runs it through a conditional check'''
 	for letter in string:
-		'''Checks to see if a letter is a letter'''
+		'''Checks to see if each letter is a letter'''
 		character_check = letter.isalpha()
 
-		'''if character is a letter it adds to the list'''
+		'''conditional check to see if each letter is a letter'''
 		if character_check == True:
+			'''if letter is true the letter gets added to separated string list'''
 			separated_string.append(letter)
 
-			'''takes letter and add it to front of reversed string list'''
+			'''the letter is also added to the front of the reversed string list'''
 			reversed_separated_string.insert(0,letter)
 
 	'''combines all the elements together in separated string list'''
@@ -33,10 +34,10 @@ for string in strings:
 	'''combines all the elements together in reversed string list'''
 	combined_string_reversed = "".join(reversed_separated_string)
 	
-	'''final conditional check the compares reversed string with non-reversed'''
+	'''final conditional check that compares the reversed string with non-reversed string'''
 	if combined_string == combined_string_reversed:
 		print(f"\"{strings[i]}\" is a palindrome!")
-		'''clears out list so elements aren't combined with next string'''
+		'''clears out lists so elements aren't combined with the next string'''
 		separated_string.clear()
 		reversed_separated_string.clear()
 	else:
